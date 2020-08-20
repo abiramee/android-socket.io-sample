@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:background="#D5D5D5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.67"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:background="#D5D5D5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#D5D5D5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#D5D5D5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.67">
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout3"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+                app:layout_constraintEnd_toEndOf="@+id/relativeLayout2"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout3"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout3"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_6"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout3"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_7"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout4" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_8"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/relativeLayout3"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/imageButton_grid_9"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="@{(v) -> onClickListener.onClick(v)}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout3"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_user_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="44dp"
+            tools:text="Abir"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_user_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
+            tools:text="Abir"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

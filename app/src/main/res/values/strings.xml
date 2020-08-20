@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="share">Share</string>
+    <string name="searching_nyour_opponent">Searching\nyour opponent</string>
+    <string name="enter_room_name">Enter Room Name</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
+    <string name="enter_your_nick_name">Enter Your Nick Name</string>
+</resources>

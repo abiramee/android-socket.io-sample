@@ -1,0 +1,11 @@
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/nunito_regular_tff" />
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/nunito_bold_tff" />
+</font-family>

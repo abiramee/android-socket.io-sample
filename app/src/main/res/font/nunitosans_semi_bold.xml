@@ -1,0 +1,5 @@
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:font="@font/nunito_sans_semi_bold_tff" />
+</font-family>
