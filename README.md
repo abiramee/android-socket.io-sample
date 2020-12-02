@@ -7,7 +7,7 @@
 
 ![asset](screenshots/tictoctoe.gif)
 
-# DON"T FORGET
+# DON'T FORGET
 ### Change the SERVER_URL under MainActivity.kt
   ```kotlin
     const val SERVER_URL = "<place your server url>"
