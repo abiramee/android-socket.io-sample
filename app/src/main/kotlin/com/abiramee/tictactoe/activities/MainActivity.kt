@@ -46,6 +46,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
     private var competitorId = 1
     private var moves = IntArray(9) { it * -1 }
     private lateinit var imageButtonGridList: List<ImageButton>
+    companion object {
+        const val SERVER_URL = "<place your server url>"
+    }
 
     @ObsoleteCoroutinesApi
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,14 +97,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
     @ObsoleteCoroutinesApi
     private fun triggerSocket() {
         try {
-            socket = IO.socket("http://192.168.31.116:3000/")
+            socket = IO.socket(SERVER_URL)
         } catch (e: Exception) {
             runOnUiThread{
                 Toast.makeText(this, "Connection error!", Toast.LENGTH_LONG).show()
             }
         }
-
         socket.connect()
+
         socket.on(Socket.EVENT_CONNECT, onConnect)
         socket.on("updateTick", onTick)
         socket.on("newUserToRoom", onNewUser)
@@ -302,6 +305,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
         }
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private fun iconSelector(userType: Int): Drawable {
         return when (userType) {
             1 -> getDrawable(R.drawable.ic_zero)
