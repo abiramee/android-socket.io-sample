@@ -3,7 +3,7 @@
 [![socket.io-client](https://img.shields.io/badge/socket.io_client-1.0.0-orange)](https://github.com/abiramee/android-socket.io-sample)
 [![Material_Components](https://img.shields.io/badge/Material_Components-1.2.0-darkblue)](https://github.com/material-components/material-components-android)
 
-##### This is a simple project of TicTacToe using socket.io with node.js
+#### This is a simple project of TicTacToe using socket.io with node.js
 
 ![asset](screenshots/tictoctoe.gif)
 
